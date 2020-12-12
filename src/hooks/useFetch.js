@@ -23,8 +23,6 @@ export const useFetch = (url) => {
       .then( resp => resp.json() )
       .then( data => {
 
-        setTimeout(() => {
-
           if ( isMounted.current ) {            
             setState({
               loading: false,
@@ -35,7 +33,6 @@ export const useFetch = (url) => {
             console.log('setState no se llamo');
           }
 
-        }, 4000);
       })
   }, [url])
 
