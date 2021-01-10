@@ -1,10 +1,5 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import { Padre } from './components/07-tarea-memo/Padre';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { TodoApp } from './components/08-useReducer/TodoApp'
 
-// ReactDOM.render(
-//   <Padre />,
-//   document.getElementById('root')
-// );
-
-import './components/08-useReducer/intro-reducer';
+ReactDOM.render(<TodoApp />, document.getElementById('root'))
