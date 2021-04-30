@@ -1,15 +1,14 @@
 import React from "react";
 
-import { useForm } from '../../hooks/useForm';
+import { useForm } from "../../hooks/useForm";
 
 export const TodoAdd = ({ handleAddTodo }) => {
-
   const [{ description }, handleInputChange, reset] = useForm({
-    description: '',
-  })
+    description: "",
+  });
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     if (description.trim().length <= 1) {
       return;
@@ -19,11 +18,11 @@ export const TodoAdd = ({ handleAddTodo }) => {
       id: new Date().getTime(),
       desc: description,
       done: false,
-    }
+    };
 
-    handleAddTodo( newTodo )
-    reset()
-  }
+    handleAddTodo(newTodo);
+    reset();
+  };
 
   return (
     <>
@@ -32,18 +31,18 @@ export const TodoAdd = ({ handleAddTodo }) => {
 
       <form onSubmit={handleSubmit}>
         <input
-          type="text"
-          name="description"
-          className="form-control"
-          placeholder="Aprender ..."
-          autoComplete="off"
+          type='text'
+          name='description'
+          className='form-control'
+          placeholder='Aprender ...'
+          autoComplete='off'
           value={description}
           onChange={handleInputChange}
         />
 
         <button
-          type="submit"
-          className="btn btn-outline-primary mt-1 btn-block"
+          type='submit'
+          className='btn btn-outline-primary mt-1 btn-block'
         >
           Agregar
         </button>
