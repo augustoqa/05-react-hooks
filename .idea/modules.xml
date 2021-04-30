@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/05-hook-app.iml" filepath="$PROJECT_DIR$/.idea/05-hook-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/05-react-hooks.iml" filepath="$PROJECT_DIR$/.idea/05-react-hooks.iml" />
     </modules>
   </component>
 </project>
